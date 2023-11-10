@@ -1,6 +1,7 @@
 # Pod 30 Project Brainstorming
 
 App ideas:
+
 1. Recipe app: Use a recipe api to include recipes for users with different dietary restrictions. 
 
 * Mobile: local storage, easy to-go access, offline viewing, easier to use than a computer in the kitchen
@@ -47,6 +48,8 @@ App ideas:
 * Habit: automatic reminders to keep you informed on upcoming workouts and messages from your trainer. 
 * Scope: pictures, displays of notes, text
 
+
+Final chosen idea: Recipe App, for its best evaluation.
 
 
 Popular apps:
