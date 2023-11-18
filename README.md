@@ -24,9 +24,9 @@ Product Spec
 1. User Stories (Required and Optional)
 Required Must-have Stories
 
-* Display list of recipes.
-* Display details of each recipe, cooking time, ingredients, and steps. 
-* Users can favorite their recipes 
+[x] Display list of recipes.
+[x]  Display details of each recipe, ingredients, and steps. 
+[x]Users can favorite their recipes 
 
 Optional Nice-to-have Stories
 
@@ -76,9 +76,18 @@ Wireframes
 
 <img src="./Interactive_prototype.gif" title="Video Walkthrough" width='' alt="Video Walkthrough" />
 
+<img src="./InterationProject9.gif" title="Video Walkthrough" width='' alt="Video Walkthrough" />
+
 
 Schema
-[This section will be completed in Unit 9]
+Sprint 1: Set up the project and integrate basic Read-only Networking.
+- the api was chosen and the endpoints was inserted to ensure the decoding process went smoothly
+Sprint 2: Design and implement the Home Screen.
+- the screen was built and some design features were added
+Sprint 3: Build the detailViewController
+- the detial view was succesfully implemented. 
+Sprint 4: Implement the favorite button features
+-tab bar controller was succesfully implemented, however there is a minor bug that is not populating cells properly. 
 
 Models
 all iOS versions, after 2020
