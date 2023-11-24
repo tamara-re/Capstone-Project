@@ -409,9 +409,10 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryLabel" destination="taS-V5-Xdj" id="eQ5-Gs-9Aa"/>
-                                            <outlet property="posterImageView" destination="bR8-q6-jr0" id="E1q-0v-UQt"/>
-                                            <outlet property="titleLabel" destination="P7P-Gb-Rr4" id="8N8-Q5-VfH"/>
+                                            <outlet property="categoryLabel" destination="taS-V5-Xdj" id="74p-nY-cpX"/>
+                                            <outlet property="overviewLabel" destination="IQB-k3-QpF" id="XfB-TC-iNU"/>
+                                            <outlet property="posterImageView" destination="bR8-q6-jr0" id="SVi-Ir-MQV"/>
+                                            <outlet property="titleLabel" destination="P7P-Gb-Rr4" id="pIP-AO-lJk"/>
                                             <segue destination="H2z-Jj-psh" kind="show" id="E9M-SY-9f1"/>
                                         </connections>
                                     </tableViewCell>
@@ -463,6 +464,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="a2P-JZ-TRV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZVD-lc-XaG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

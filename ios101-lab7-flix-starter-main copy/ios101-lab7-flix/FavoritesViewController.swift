@@ -30,14 +30,14 @@ class FavoritesViewController: UIViewController, UITableViewDataSource {
 
         // Anything in the defer call is guaranteed to happen last
         defer {
-            // Show the "Empty Favorites" label if there are no favorite movies
+            // Show the "Empty Favorites" label if there are no favorite recipes
             emptyFavoritesLabel.isHidden = !favoriteRecipes.isEmpty
         }
 
-        // TODO: Get favorite movies and display in table view
-        // Get favorite movies and display in table view
-        // 1. Get the array of favorite movies
-        // 2. Set the favoriteMovies property so the table view data source methods will have access to latest favorite movies.
+        // TODO: Get favorite recipes and display in table view
+        // Get favorite recipes and display in table view
+        // 1. Get the array of favorite recipes
+        // 2. Set the favoriteRecipes property so the table view data source methods will have access to latest favorite recipes.
         // 3. Reload the table view
         // ------
 
@@ -57,22 +57,22 @@ class FavoritesViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeCell", for: indexPath) as! RecipeCell
         
-        // Get the movie associated table view row
+        // Get the recipe associated table view row
         let recipe = favoriteRecipes[indexPath.row]
         
         // Configure the cell (i.e. update UI elements like labels, image views, etc.)
 //
-//        // Unwrap the optional poster path
-//        if let strMealThumb = recipe.strMealThumb,
-//
-//               // Create a url by appending the poster path to the base url. https://developers.themoviedb.org/3/getting-started/images
-//              let imageUrl = URL(string: strMealThumb) {
-//
-//               // Use the Nuke library's load image function to (async) fetch and load the image from the image url.
-//            Nuke.loadImage(with: imageUrl, into: cell.posterImageView)
-//           }
+        // Unwrap the optional poster path
+        if let strMealThumb = recipe.strMealThumb,
+
+    
+              let imageUrl = URL(string: strMealThumb) {
+
+               // Use the Nuke library's load image function to (async) fetch and load the image from the image url.
+            Nuke.loadImage(with: imageUrl, into: cell.posterImageView)
+           }
  
-        print(recipe.strMeal)
+//        print(recipe.strMeal)
         // Set the text on the labels
         cell.titleLabel.text = recipe.strMeal
         cell.categoryLabel.text = recipe.strCategory
@@ -91,7 +91,8 @@ class FavoritesViewController: UIViewController, UITableViewDataSource {
         // `indexPathForSelectedRow` returns an optional `indexPath`, so we'll unwrap it with a guard.
         guard let selectedIndexPath = tableView.indexPathForSelectedRow else { return }
 
-        // Get the selected movie from the movies array using the selected index path's row
+        // Get the selected recipe from the recipe
+//        array using the selected index path's row
         let selectedRecipe = favoriteRecipes[selectedIndexPath.row]
 
         // Get access to the detail view controller via the segue's destination. (guard to unwrap the optional)
