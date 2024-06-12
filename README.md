@@ -87,7 +87,7 @@ Sprint 2: Design and implement the Home Screen.
 Sprint 3: Build the detailViewController
 - the detial view was succesfully implemented. 
 Sprint 4: Implement the favorite button features
--tab bar controller was succesfully implemented, however there is a minor bug that is not populating cells properly. 
+-tab bar controller was succesfully implemented. 
 
 Models
 all iOS versions, after 2020
